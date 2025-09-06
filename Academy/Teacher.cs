@@ -22,12 +22,31 @@ namespace Academy
         }
         public override string ToString()
         {
-            return base.ToString() + " " + $"{Speciality} {Experience} ";
+            return base.ToString() + $" {Speciality,-22} {Experience,-3} ";
         }
         ~Teacher()
         {
             Console.WriteLine($"TDestructor:\t{GetHashCode().ToString("X")}");
         }
+
+        public static Teacher FillRand()
+        {
+            Console.WriteLine("Фамилия: ");
+            string LastName = Console.ReadLine();
+            Console.WriteLine("Имя: ");
+            string FirstName = Console.ReadLine();
+            Console.WriteLine("Возраст: ");
+            int Age;
+            int.TryParse(Console.ReadLine(), out Age);
+            Console.WriteLine("Специальность:");
+            string Speciality = Console.ReadLine();
+            Console.WriteLine("Опыт:");
+            int Experience;
+            int.TryParse(Console.ReadLine(), out Experience);
+            return new Teacher(LastName, FirstName, Age, Speciality, Experience);
+        }
+
+
 
 
     }
