@@ -1,7 +1,7 @@
-﻿#define INHERITANCE
+﻿//#define INHERITANCE
 //#define WRITH_TO_FILE
 //#define GROUP
-//#define LOAD_TO_FILE
+#define LOAD_TO_FILE
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
