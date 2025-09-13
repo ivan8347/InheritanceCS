@@ -1,5 +1,5 @@
-﻿//#define INHERITANCE
-#define WRITH_TO_FILE
+﻿#define INHERITANCE
+//#define WRITH_TO_FILE
 //#define GROUP
 //#define LOAD_TO_FILE
 using System;
