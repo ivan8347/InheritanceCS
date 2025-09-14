@@ -24,17 +24,26 @@ namespace Geometry
 
 
 
+            Console.WriteLine("\n\n\n\n\n");
             // Shape shape = new Shape(0, 0, 0, Sistem.Drawing.Color.Aquamarine);
-            Rectangle rectangle = new Rectangle(150, 100, 500, 300, 3, Color.Aquamarine);
+            Rectangle rectangle = new Rectangle(150, 100, 20, 40, 3, Color.Aquamarine);
             rectangle.Info(e);
-            Square square = new Square(80,700,300,3,Color.Red);
+            Console.WriteLine("\n");
+            Square square = new Square(80,220,40,3,Color.Red);
             square.Info(e);
-            while (true)
+            Console.WriteLine("\n");
+            Circle circle = new Circle(40, 390, 85, 3, Color.Blue);
+            circle.Info(e);
+            Console.WriteLine("\n");
+
+
+
+           /* while (true)
             {
                 rectangle.Draw(e);
                 square.Draw(e);
-                
-            }
+                circle.Draw(e);
+            }*/
         }
         [DllImport("kernel32.dll")]
         public static extern IntPtr GetConsoleWindow();

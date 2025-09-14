@@ -14,4 +14,10 @@ namespace Geometry
         double GetDiagonal();
         void DrawDiagonal(PaintEventArgs e);
     }
+    internal interface IHaveDiameter
+    {
+
+        double GetDiameter();
+        void DrawDiameter(PaintEventArgs e);
+    }
 }
