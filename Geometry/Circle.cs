@@ -66,7 +66,7 @@ namespace Geometry
         public override void Info(PaintEventArgs e)
         {
             Console.WriteLine($"Радиус: {Radius}");
-            Console.WriteLine($"Дигональ: {GetDiameter()}");
+            Console.WriteLine($"Диаметр: {GetDiameter()}");
             base.Info(e);
             DrawDiameter(e);
         }

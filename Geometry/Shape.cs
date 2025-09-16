@@ -8,12 +8,12 @@ namespace Geometry
     {
         static readonly int MIN_START_X = 10;
         static readonly int MIN_START_Y = 10;
-        static readonly int MAX_START_X = 900;
-        static readonly int MAX_START_Y = 700;
+        static readonly int MAX_START_X = 2000;
+        static readonly int MAX_START_Y = 1000;
         static readonly int MIN_LINE_WIDTH = 1;
         static readonly int MAX_LINE_WIDTH = 32;
         static readonly int MIN_SIZE = 50;
-        static readonly int MAX_SIZE = 850;
+        static readonly int MAX_SIZE = 1200;
         public Color Color { get; set; }
         int startX;
         int startY;

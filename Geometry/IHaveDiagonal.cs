@@ -20,4 +20,9 @@ namespace Geometry
         double GetDiameter();
         void DrawDiameter(PaintEventArgs e);
     }
+    internal interface IHaveMedian
+    {
+        double[] GetMedian();
+        void DrawMedian(PaintEventArgs e);
+    }
 }
