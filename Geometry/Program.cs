@@ -37,18 +37,27 @@ namespace Geometry
             Console.WriteLine("Круг");
             Circle circle = new Circle(40, 890, 85, 3, Color.Blue);
             circle.Info(e);
-            Console.WriteLine("\n");
-            Console.WriteLine("Треугольник");*/
-            Triangle triangle = new Triangle(150,100,110,750,200,3,Color.Green);
+            Console.WriteLine("\n");*/
+           /* Console.WriteLine("Треугольник");
+            Triangle triangle = new Triangle(150,100,110,750,400,3,Color.Green);
             triangle.Info(e);
+            Console.WriteLine("\n");*/
+            Console.WriteLine("Прямоугольный треугольник");
+            Triangle_90 triangle_90 = new Triangle_90(150,100,600,200,3,Color.Coral);
+            triangle_90.Info(e);
             Console.WriteLine("\n");
+           // Isosceles_triangle isosceles_Triangle = new Isosceles_triangle(150,30,850,200,3,Color.OrangeRed);
+           // isosceles_Triangle.Info(e);
+           // Console.WriteLine("\n");
+
+
 
             while (true)
             {
                 //rectangle.Draw(e);
                 //square.Draw(e);
                 //circle.Draw(e);
-                triangle.Draw(e);
+                //triangle.Draw(e);
             }
         }
         [DllImport("kernel32.dll")]
