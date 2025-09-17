@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Geometry
 {
-    internal class Isosceles_triangle : Triangle
+    internal class Isosceles_Triangle : Triangle
     {
        
-        public Isosceles_triangle(double side_1, double angleDeg,
+        public Isosceles_Triangle(double side_1, double angleDeg,
             int startX, int startY, int lineWidht, Color color) :
             base(side_1, side_1, angleDeg,
             startX,  startY, lineWidht, color)

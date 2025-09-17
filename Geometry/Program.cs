@@ -42,13 +42,18 @@ namespace Geometry
             Triangle triangle = new Triangle(150,100,110,750,400,3,Color.Green);
             triangle.Info(e);
             Console.WriteLine("\n");*/
-            Console.WriteLine("Прямоугольный треугольник");
+            /*Console.WriteLine("Прямоугольный треугольник");
             Triangle_90 triangle_90 = new Triangle_90(150,100,600,200,3,Color.Coral);
             triangle_90.Info(e);
+            Console.WriteLine("\n");*/
+            Console.WriteLine("Равнобедренный треугольник");
+            Isosceles_Triangle isosceles_Triangle = new Isosceles_Triangle(150,30,1000,200,3,Color.OrangeRed);
+            isosceles_Triangle.Info(e);
             Console.WriteLine("\n");
-           // Isosceles_triangle isosceles_Triangle = new Isosceles_triangle(150,30,850,200,3,Color.OrangeRed);
-           // isosceles_Triangle.Info(e);
-           // Console.WriteLine("\n");
+            Console.WriteLine("Равносторонний треугольник");
+            Equilateral_Triangle equilateral_Triangle = new Equilateral_Triangle
+                (150, 800, 200, 3, Color.Green);
+            equilateral_Triangle.Info(e);
 
 
 
@@ -58,6 +63,13 @@ namespace Geometry
                 //square.Draw(e);
                 //circle.Draw(e);
                 //triangle.Draw(e);
+               // triangle_90.Draw(e);
+               // triangle_90.DrawMedian(e);
+                isosceles_Triangle.Draw(e);
+                isosceles_Triangle.DrawMedian(e);
+                equilateral_Triangle.Draw(e);
+                equilateral_Triangle.DrawMedian(e);
+
             }
         }
         [DllImport("kernel32.dll")]

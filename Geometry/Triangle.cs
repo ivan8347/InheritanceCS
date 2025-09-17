@@ -78,13 +78,14 @@ namespace Geometry
              );
             PointF C = new PointF
              (
-               StartX + (float)(side_2 * Math.Cos(0)), // по горизонтали
+               StartX + (float)(side_2 * Math.Cos(0)), 
                StartY - (float)(side_2 * Math.Sin(0))
              );
             C = new PointF(StartX + (float)side_2, StartY);
 
             PointF[] points = { A, B, C };
             e.Graphics.DrawPolygon(pen, points);
+
             using (Font font = new Font("Arial", 12))
             {
                 // Рисуем метки
@@ -104,12 +105,8 @@ namespace Geometry
                 StartX + (float)(side_1 * Math.Cos(angleRad)),
                 StartY - (float)(side_1 * Math.Sin(angleRad))
              );
-            PointF C = new PointF
-             (
-               StartX + (float)(side_2 * Math.Cos(0)), 
-               StartY - (float)(side_2 * Math.Sin(0))
-             );
-            C = new PointF(StartX + (float)side_2, StartY);
+         
+           PointF C = new PointF(StartX + (float)side_2, StartY);
             // Средина стороны, противоположной вершине
             PointF midSide_1 = new PointF(
                 (B.X + C.X) / 2,
